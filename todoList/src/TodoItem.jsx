@@ -21,7 +21,7 @@ export function TodoItem ({ completed, id, title, toggleTodo, deleteTodo }) {
 
 TodoItem.propTypes = {
    completed:PropTypes.bool.isRequired,
-   id:PropTypes.number.isRequired,
+   id:PropTypes.string.isRequired,
    title:PropTypes.string.isRequired,
    toggleTodo:PropTypes.func.isRequired,
    deleteTodo:PropTypes.func.isRequired,

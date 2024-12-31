@@ -21,9 +21,9 @@ export function TodoList({ todos, toggleTodo, deleteTodo }) {
 }
 
 TodoList.propTypes = {
-   todos: PropTypes.arrayOf = (
+   todos: PropTypes.arrayOf(
       PropTypes.shape({
-         id:PropTypes.number.isRequired,
+         id:PropTypes.string.isRequired,
          completed:PropTypes.bool.isRequired,
          title:PropTypes.string.isRequired,
       })
