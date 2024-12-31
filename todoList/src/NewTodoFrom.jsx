@@ -1,12 +1,10 @@
-import { useState } from "react"
+import { useState } from "react";
 import PropTypes from 'prop-types';
 
 
 export function NewTodoForm ({ onSubmit }) {
    const [newItem, setNewItem] = useState("");
    
-
-
    function handleSubmit(e) {
       e.preventDefault();
       if (newItem === '') return;
